@@ -16,6 +16,16 @@ pub struct Commit {
     actions: Vec<CommitAction>,
 }
 
+impl CommitAction {
+    pub fn new(action: String, file_path: String, content: String) -> Self {
+        CommitAction {
+            action,
+            file_path,
+            content,
+        }
+    }
+}
+
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct CommitAction {
     action: String,
