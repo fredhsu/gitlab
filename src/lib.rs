@@ -2,10 +2,10 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct Gitlab {
-    host: String,
-    project: String,
-    branch: String,
-    token: String,
+    pub host: String,
+    pub project: String,
+    pub branch: String,
+    pub token: String,
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
